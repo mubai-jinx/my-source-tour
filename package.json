@@ -1,0 +1,25 @@
+{
+  "name": "sour-tour-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm run --filter=\"@zhengyl/*\" --filter='zhengyl' build",
+    "build:utils": "pnpm run --filter @zhengyl/utils build",
+    "build:reactivity": "pnpm run --filter @zhengyl/reactivity build",
+    "test": "vitest packages/",
+    "test:once": "vitest run packages/",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint packages/**/src",
+    "lint:fix": "eslint packages/**/src --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.25.1",
+    "typescript": "^4.8.4",
+    "unbuild": "^0.9.4",
+    "vitest": "^0.25.1"
+  }
+}
